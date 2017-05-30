@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/pgimage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pgname"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="Royal PG"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pgaddress"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="Ahmedabad, Satellite"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#666" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:text="No Of Beds"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/no_of_beds"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="left"
+                android:paddingLeft="240dp"
+                android:layout_weight="1"
+                android:text="Bed Type"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Bed Price"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/bedprice"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="left"
+                android:paddingLeft="240dp"
+                android:layout_weight="1"
+                android:text="Bed Type"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Security"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/security"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="left"
+                android:paddingLeft="240dp"
+                android:layout_weight="1"
+                android:text="Bed Type"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Total Price"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/totalamount"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="left"
+                android:paddingLeft="240dp"
+                android:layout_weight="1"
+                android:text="Bed Type"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#666" />
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/view_selector"
+        android:text="Confirm Booking"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+
+        />
+
+</LinearLayout>

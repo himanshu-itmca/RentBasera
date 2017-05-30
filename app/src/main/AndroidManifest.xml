@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.himanshu.rentbasera">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FbId" />
+
+        <activity
+            android:name="com.example.himanshu.rentbasera.Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/FbId" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.himanshu.rentbasera.LoginActivity"
+            android:label="@string/app_name" />
+        <activity android:name="com.example.himanshu.rentbasera.RegisterationActivity" />
+        <activity android:name="com.example.himanshu.rentbasera.ForgotPasswordActivity" />
+        <activity android:name="com.example.himanshu.rentbasera.EmailVerification" />
+        <activity android:name="com.example.himanshu.rentbasera.PasswordReset" />
+        <activity
+            android:name="com.example.himanshu.rentbasera.Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.himanshu.rentbasera.pg_list_row" />
+        <activity android:name="com.example.himanshu.rentbasera.AvailablePGList" />
+        <activity
+            android:name="com.example.himanshu.rentbasera.PayMentActivity"
+            android:label="@string/title_activity_pay_ment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.himanshu.rentbasera.MoreDetailsAboutPG" />
+        <activity android:name="com.example.himanshu.rentbasera.CheckOutActivity" />
+        <activity android:name="com.example.himanshu.rentbasera.UserProfileActivity" />
+        <activity android:name="com.example.himanshu.rentbasera.FeedbackActivity" />
+        <activity android:name="com.example.himanshu.rentbasera.ContactUs"></activity>
+    </application>
+
+</manifest>

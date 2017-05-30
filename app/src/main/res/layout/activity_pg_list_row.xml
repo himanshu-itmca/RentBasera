@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pg_list_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context="com.example.himanshu.rentbasera.com.example.himanshu.rentbasera.pg_list_row">
+
+<ImageView
+    android:id="@+id/pgimageview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:src="@drawable/emailicon"
+    />
+
+ <TextView
+     android:id="@+id/pgnameTextView"
+     android:gravity="center"
+     android:hint="PGNAME"
+     android:textSize="30dp"
+     android:layout_marginTop="30dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/pgimageview"
+     android:textStyle="bold"
+
+     />
+  <TextView
+      android:id="@+id/roomsTextView"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/pgnameTextView"
+      android:text="Rooms Available"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/rectangle_border"
+      />
+   <TextView
+       android:id="@+id/noOfRoomsTextView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/pgnameTextView"
+       android:layout_toRightOf="@+id/roomsTextView"
+       android:layout_marginTop="22dp"
+       android:layout_marginLeft="10dp"
+       />
+  <TextView
+      android:id="@+id/bedTextView"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/roomsTextView"
+      android:text="No Of Beds"
+      android:textStyle="bold"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/rectangle_border"
+      />
+ <TextView
+     android:id="@+id/noOfBedsTextView"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/noOfRoomsTextView"
+     android:layout_toRightOf="@+id/bedTextView"
+     android:layout_marginTop="12dp"
+     android:layout_marginLeft="10dp"
+     />
+
+ <TextView
+     android:id="@+id/available"
+     android:layout_width="200dp"
+     android:layout_height="wrap_content"
+     android:text="Available For"
+     android:textStyle="bold"
+     android:layout_below="@+id/noOfBedsTextView"
+     android:layout_marginTop="12dp"
+     android:background="@drawable/rectangle_border"
+     />
+ <TextView
+     android:id="@+id/availableTextView"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/noOfBedsTextView"
+     android:layout_toRightOf="@+id/available"
+     android:layout_marginTop="12dp"
+     android:layout_marginLeft="10dp"
+     />
+  <TextView
+      android:id="@+id/payableAmount"
+     android:layout_width="200dp"
+     android:layout_height="wrap_content"
+     android:text="Payable Amount"
+     android:textStyle="bold"
+     android:textSize="20dp"
+     android:layout_below="@id/available"
+     android:layout_marginTop="10dp"
+      android:background="@drawable/rectangle_border"
+      />
+ <TextView
+     android:id="@+id/payableAmountTextView"
+     android:layout_width="200dp"
+     android:layout_height="wrap_content"
+     android:text="RS"
+     android:layout_below="@id/available"
+     android:layout_toRightOf="@id/payableAmount"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="15dp"
+     />
+ <TextView
+     android:id="@+id/locationTextView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+
+     android:hint="Location"
+     android:gravity="center"
+     android:textSize="20dp"
+     android:textStyle="bold"
+     android:layout_below="@+id/payableAmount"
+     android:layout_marginTop="10dp"
+     android:layout_marginLeft="120dp"
+     android:background="@drawable/rectangle_border"
+     />
+
+ <Button
+     android:id="@+id/booknowButton"
+     android:layout_width="350dp"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:text="Book Now"
+     android:textSize="30dp"
+     android:textStyle="italic"
+     android:layout_below="@+id/locationTextView"
+     android:background="@drawable/button_style"
+     android:layout_marginTop="10dp"
+
+     />
+
+</RelativeLayout>

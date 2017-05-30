@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    >
+
+
+
+    <TextView
+        android:id="@+id/myAccountTextView"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="My Account"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#f20c1f"
+        android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:hint="Email"
+            android:inputType="text"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+           android:background="@drawable/rectangle_border"/>
+<!--            android:drawableLeft="@drawable/ic_mail_outline_black_24dp" -->
+
+
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/rectangle_border"/>
+      <!--  android:drawableLeft="@drawable/ic_lock_outline_black_24dp" -->
+
+    <CheckBox
+        android:id="@+id/showPasswordCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/forgotpasswordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textSize="15sp"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="190dp"
+        android:textColor="@color/black"
+        android:onClick="goForgetPassActivity"
+        />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sign in"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/button_style"></Button>
+ <!--       android:drawableLeft="@mipmap/ic_launcher" -->
+
+
+ <!--   <Button
+        android:id="@+id/fbsignin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Login with Facebook"
+        android:textSize="20dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#d836399b"
+        android:drawableLeft="@drawable/fbicon"
+        /> -->
+    <Button
+        android:id="@+id/newuser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="New User?"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:layout_below="@id/signin"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_style"        />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/newuser"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fb_button_style"
+        />
+
+    <!--
+    <TextView
+        android:onClick=""
+        android:id="@+id/skipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newuser"
+        android:text="Skip This Step"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp"
+        /> -->
+</RelativeLayout>

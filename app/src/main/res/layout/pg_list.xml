@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        android:layout_margin="8dp"
+        card_view:cardBackgroundColor="#edeae6"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="3dp"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true">
+
+        <!--card_view:contentPadding="4dp"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ec0d0d"
+                android:layout_above="@+id/pgimage"
+                ></View>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_launcher"
+                android:layout_below="@+id/pglocation"
+                android:id="@+id/pgimage"
+                />
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/pgcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noida"
+                android:layout_alignParentRight="true"
+                />
+
+
+            <Button
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_below="@+id/pgimage"
+                />
+
+            <TextView
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:textStyle="italic"
+                android:id="@+id/pglocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sec-23,"
+                android:layout_alignTop="@+id/pgcity"
+                android:layout_alignLeft="@+id/pgimage"
+                android:layout_alignStart="@+id/pgimage" />
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_marginTop="05dp"
+                android:text="View More.."
+                android:textColor="#fff"
+                android:background="@drawable/card_view_button"
+                android:id="@+id/pgid"
+                android:layout_below="@+id/pgimage"
+                android:layout_alignRight="@+id/pgimage"
+                android:layout_alignEnd="@+id/pgimage"
+                android:onClick="viewdetails"
+
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

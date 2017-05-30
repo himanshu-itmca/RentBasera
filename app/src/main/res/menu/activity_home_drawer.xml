@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+             android:icon="@drawable/ic_location_city_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/Profile"
+            android:icon="@drawable/ic_border_color_black_24dp"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/policies"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Policies" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_person_outline_black_login"
+            android:title="FeedBack" />
+        <item
+            android:id="@+id/contactus"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="Contact Us" />
+
+    </group>
+
+<!--    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>  -->
+
+</menu>
