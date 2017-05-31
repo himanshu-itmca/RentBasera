@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,30 +79,33 @@ public class PGAdapter extends RecyclerView.Adapter <PGAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-       // Log.d("yy----","aaa gyaaaa");
+        Log.d("yy----","aaa gyaaaa");
 //        PG mypg=pgList.get(position);
-//        Log.d("yy----",mypg.getPgname());
-//        holder.pgname.setText(mypg.getPgname());
-//        Log.d("yy----",mypg.getLocation());
 //        holder.no_of_rooms.setText(String.valueOf(mypg.getNo_of_rooms()));
 //        holder.no_of_beds.setText(String.valueOf(mypg.getNo_of_beds()));
 //        holder.available_for.setText(mypg.getAvailable_for());
 //        holder.pglocation.setText(mypg.getLocation());
 //        holder.payableAmount.setText("Rs. "+mypg.getAmount());
-//        Log.d("urllllllll",mypg.getImageurl());
 //
 //        Glide.with(context)
-//                .load("http://192.168.43.19:8090/RestServiceRegisterLogin/"+mypg.getImageurl())
+//                .load("http://+WebServiceURL.IP+/RestServiceRegisterLogin/"+mypg.getImageurl())
 //                .into(holder.image);
 
             final PG myPg=pgList.get(position);
             holder.pgadress.setText(myPg.getPgArea());
             holder.pgCity.setText(myPg.getLocation());
             holder.gender.setText(myPg.getAvailable_for());
-        Glide.with(context)
-                .load("http://192.168.43.19:8090/RestServiceRegisterLogin/"+myPg.getImageurl())
-                .into(holder.pgimage);
-            holder.viewMore.setOnClickListener(new View.OnClickListener() {
+        Glide.with(context).load("http://+WebServiceURL.IP+/RestServiceRegisterLogin/"+myPg.getImageurl()).into(holder.pgimage);
+
+        Log.d("AA----"," : "+myPg);
+        Log.d("AB----"," : "+myPg.getPgArea());
+        Log.d("yy----",myPg.getPgname());
+        Log.d("yy----",myPg.getLocation());
+        Log.d("urllllllll",myPg.getImageurl());
+        Log.d("Ava----"," : "+myPg.getAvailable_for());
+
+
+        holder.viewMore.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                      Intent intent=new Intent(context,MoreDetailsAboutPG.class);

@@ -86,7 +86,7 @@ public class Home extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-         adapter = new ArrayAdapter<String>(this,android.R.layout.select_dialog_item,language);
+        adapter = new ArrayAdapter<String>(this,android.R.layout.select_dialog_item,language);
         selectCity=  (AutoCompleteTextView) findViewById(R.id.cityAutoComplete);
         selectCity.setThreshold(1);//will start working from first character
         selectCity .setAdapter(adapter);//setting the adapter data into the AutoCompleteTextView
@@ -291,6 +291,7 @@ public class Home extends AppCompatActivity
                         String imageurl = jsonObject.get("imageurl").toString();
                         int no_of_rooms = jsonObject.getInt("no_of_rooms");
                         String location = jsonObject.get("location").toString();
+
                         String pgname = jsonObject.get("pgname").toString();
                         int no_of_beds=jsonObject.getInt("no_of_beds");
                         String available_for=jsonObject.get("available_for").toString();

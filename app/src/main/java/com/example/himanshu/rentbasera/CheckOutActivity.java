@@ -52,7 +52,7 @@ public class CheckOutActivity extends AppCompatActivity {
         confirmBooking=(Button)findViewById(R.id.buttonConfirm);
 
         Glide.with(getApplicationContext())
-                .load("http://192.168.43.19:8090/RestServiceRegisterLogin/"+myPg.getImageurl())
+                .load("http://"+WebServiceURL.IP+"/RestServiceRegisterLogin/"+myPg.getImageurl())
                 .into(pgimage);
           pgname.setText(myPg.getPgname());
           pgaddress.setText(myPg.getPgArea() + " " + myPg.getLocation());
@@ -61,7 +61,7 @@ public class CheckOutActivity extends AppCompatActivity {
           bed_price.setText(bedprice);
           String security_amount= String.valueOf((Integer.parseInt(bedprice)/2));
           security.setText(security_amount);
-           String total_amount=String.valueOf(Integer.parseInt(bedprice) + ((Integer.parseInt(bedprice)/2)));;
+           String total_amount=String.valueOf(Integer.parseInt(bedprice) + ((Integer.parseInt(bedprice)/2)));
             total_price.setText(total_amount);
 
         confirmBooking.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +80,7 @@ public class CheckOutActivity extends AppCompatActivity {
 
         RequestQueue queue= Volley.newRequestQueue(this);
         Map<String,String> jsonParams=new HashMap<String,String>();
-        final ProgressDialog progressDialog=new ProgressDialog(CheckOutActivity.this);;
+        final ProgressDialog progressDialog=new ProgressDialog(CheckOutActivity.this);
         progressDialog.setMessage("Please wait..!!");
         progressDialog.setTitle("Checking Your Details....");
         progressDialog.show();

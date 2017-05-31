@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.himanshu.rentbasera.url.WebServiceURL;
 
 public class MoreDetailsAboutPG extends AppCompatActivity {
     TextView pgname,pgaddress,no_of_beds,bed_price,amount;
@@ -36,8 +37,9 @@ public class MoreDetailsAboutPG extends AppCompatActivity {
         bookNowBtn=(Button) findViewById(R.id.buttonBookNow);
           pgimage=(ImageView) findViewById(R.id.pgimage);
         Glide.with(getApplicationContext())
-                .load("http://192.168.43.19:8090/RestServiceRegisterLogin/"+myPg.getImageurl())
+                .load("http://"+WebServiceURL.IP+"/RestServiceRegisterLogin/"+myPg.getImageurl())
                 .into(pgimage);
+        Log.i("imagename"," "+myPg.getImageurl());
           pgname.setText(myPg.getPgname());
           pgaddress.setText(myPg.getPgArea() + " , " +myPg.getLocation());
           no_of_beds.setText(String.valueOf(myPg.getNo_of_beds()));
